@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ensemble pour Saint-Junien - Hervé Beaudet 2026</title>
-    <meta name="description" content="Site de campagne pour la liste Ensemble pour Saint-Junien menée par Hervé Beaudet aux élections municipales de 2026.">
-    
+    <meta name="description"
+        content="Site de campagne pour la liste Ensemble pour Saint-Junien menée par Hervé Beaudet aux élections municipales de 2026.">
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="assets/css/montserrat.css">
+
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Image Protection System -->
+    <script src="image-protection.js" defer></script>
 </head>
+
 <body>
 
-    <!-- Header / Hero -->
+    <!-- Header Hero -->
     <header class="hero" id="home">
         <div class="video-background">
-            <iframe 
-                src="https://www.youtube.com/embed/1fb0bbvGdpc?autoplay=1&mute=1&controls=0&loop=1&playlist=1fb0bbvGdpc&showinfo=0&modestbranding=1" 
-                title="Saint-Junien Drone View" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+            <iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/04m7o63oVQM?autoplay=1&mute=1&loop=1&playlist=04m7o63oVQM&controls=0&showinfo=0&rel=0&modestbranding=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; transform: translate(-50%, -50%);">
             </iframe>
-            <div class="overlay"></div>
         </div>
-        
+        <div class="overlay"></div>
+
         <nav class="main-nav">
             <div class="container nav-container">
-                <a href="#home" class="logo-text">ESJ 2026</a>
+                <a href="#home" class="logo-container">
+                    <img src="assets/photo/esj26ban.png" alt="Ensemble pour Saint-Junien" class="logo-image">
+                    <span class="logo-text">ESJ 2026</span>
+                </a>
                 <button class="mobile-menu-btn" aria-label="Menu">
                     <span></span>
                     <span></span>
@@ -59,76 +66,457 @@
         </div>
     </header>
 
-    <!-- Section 1: La Tête de Liste -->
+
+
+    <!-- Section 1 La Tête de Liste -->
     <section id="tete-de-liste" class="section">
-        <div class="container split-layout">
-            <div class="image-col">
-                <div class="photo-wrapper">
-                    <img src="https://placehold.co/400x500/d64370/ffffff?text=Herv%C3%A9+Beaudet" alt="Hervé Beaudet" class="portrait">
-                    <div class="photo-accent"></div>
+        <div class="container">
+            <h2 class="section-title center">UNE VILLE POUR <span class="highlight">TOUS</span></h2>
+            <div class="grid-layout-2x2">
+                <!-- Haut gauche : Photo -->
+                <div class="grid-item photo-col">
+                    <div class="photo-wrapper">
+                        <img src="assets/photo/TDL/HB.jpg" alt="Hervé Beaudet" class="portrait">
+                        <div class="photo-accent"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="content-col">
-                <h2 class="section-title">UNE VILLE POUR <span class="highlight">TOUS</span></h2>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1fb0bbvGdpc" title="Présentation Hervé Beaudet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!-- Haut droite : Vidéo Instagram -->
+                <div class="grid-item video-col">
+                    <div class="instagram-wrapper">
+                        <iframe src="https://www.instagram.com/reel/DUL4KYbgs1u/embed" width="400" height="600"
+                            frameborder="0" scrolling="no" allowtransparency="true"
+                            style="border: none; overflow: hidden; border-radius: 3px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 0 auto; display: block; max-width: 100%;"></iframe>
+                    </div>
                 </div>
-                <div class="bio-text">
-                    <p>Saint-Jeunaud de cœur et d'action, je m'engage aujourd'hui pour donner un nouveau souffle à notre ville. Avec "Ensemble pour Saint-Junien", nous portons une vision audacieuse, solidaire et écologique pour l'avenir de notre commune.</p>
-                    <p>Notre équipe rassemble des compétences variées et une même passion : servir Saint-Junien et ses habitants avec intégrité et dynamisme.</p>
+
+                <!-- Bas gauche : Premier paragraphe restructuré -->
+                <div class="grid-item text-col">
+                    <div class="bio-text animated-text">
+                        <blockquote class="pull-quote">
+                            "Une union la plus large possible au service de Saint-Junien"
+                        </blockquote>
+
+                        <p class="fade-in-paragraph delay-1">Nous avons voulu construire l'union la plus large possible
+                            au service de Saint-Junien. Au service de notre ville, cette ville où il fait bon vivre, qui
+                            est au cœur de la nature, qui attire les familles, les retraités, les entreprises.</p>
+
+                        <p class="fade-in-paragraph delay-2">Cette ville qui s'occupe de sa jeunesse, qui se nourrit de
+                            culture et de sport. Cette ville qui peut compter sur un tissu associatif exceptionnel.</p>
+
+                        <p class="text-emphasis fade-in-paragraph delay-3">
+                            <span class="emphasis-icon">💪</span>
+                            Pour la préserver, je sais pouvoir compter sur une équipe de personnes profondément
+                            attachées à ce qui fait de Saint-Junien ce qu'elle est.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Bas droite : Second paragraphe restructuré et raccourci -->
+                <div class="grid-item text-col">
+                    <div class="bio-text animated-text">
+                        <hr class="animated-hr">
+
+                        <blockquote class="pull-quote highlight-quote">
+                            "Ensemble, nous allons maintenir notre héritage et aller plus loin"
+                        </blockquote>
+
+                        <p class="fade-in-paragraph delay-1">Malgré les contraintes budgétaires, nous avons pu et nous
+                            pourrons mener des projets ambitieux parce que nos finances sont saines.</p>
+
+                        <div class="action-summary fade-in-paragraph delay-2">
+                            <h4>Nos grands projets</h4>
+                            <ul class="project-list">
+                                <li>Amélioration de l'éclairage public</li>
+                                <li>Renforcement du service des déchets (porte-à-porte)</li>
+                                <li>Réhabilitation des friches et chemins vers l'île de Chaillac</li>
+                                <li>Ouverture du parc des Charmilles</li>
+                                <li>Jeunesse priorité absolue</li>
+                            </ul>
+                        </div>
+
+                        <p class="text-emphasis fade-in-paragraph delay-3">
+                            <span class="emphasis-icon">🗳️</span>
+                            Une démocratie ouverte pour partager nos expériences et notre attachement à Saint-Junien.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- Section 2: Les Candidats -->
     <section id="candidats" class="section bg-light">
         <div class="container">
             <h2 class="section-title center">NOTRE <span class="highlight">ÉQUIPE</span></h2>
             <div class="candidates-grid">
-                <!-- Candidate Cards (Placeholders) -->
                 <div class="candidate-card">
                     <div class="card-image">
-                        <img src="https://placehold.co/300x400/eeeeee/333333?text=Candidat+1" alt="Candidat 1">
-                        <div class="card-overlay">
-                            <button class="btn-icon"><i class="fas fa-play"></i></button>
-                        </div>
+                        <img src="https://img.flopics.fr/1.jpg" alt="Portrait de Hervé BEAUDET, candidat" loading="lazy"
+                            draggable="false" data-protected="true">
                     </div>
                     <div class="card-info">
-                        <h3>Marie Dupont</h3>
-                        <p>35 ans, Enseignante</p>
-                        <p class="desc">Engagée pour l'éducation et la culture.</p>
+                        <h3>Hervé BEAUDET</h3>
+                        <p>56 ans, Chef cuisinier</p>
+                        <p class="desc">Quartier Chantemerle</p>
                     </div>
                 </div>
-                <!-- More candidates would go here -->
                 <div class="candidate-card">
                     <div class="card-image">
-                        <img src="https://placehold.co/300x400/eeeeee/333333?text=Candidat+2" alt="Candidat 2">
+                        <img src="https://img.flopics.fr/2.jpg" alt="Portrait de Nadège COUCAUD, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
                     </div>
                     <div class="card-info">
-                        <h3>Jean Martin</h3>
-                        <p>52 ans, Chef d'entreprise</p>
-                        <p class="desc">Dynamiser le commerce local est ma priorité.</p>
+                        <h3>Nadège COUCAUD</h3>
+                        <p>52 ans, Contremaître, agent de maîtrise</p>
+                        <p class="desc">Quartier Chantemerle</p>
                     </div>
                 </div>
-                 <div class="candidate-card">
+                <div class="candidate-card">
                     <div class="card-image">
-                        <img src="https://placehold.co/300x400/eeeeee/333333?text=Candidat+3" alt="Candidat 3">
+                        <img src="https://img.flopics.fr/32e329e93ae240ded.jpg"
+                            alt="Portrait de Didier LEKIEFS, candidat" loading="lazy" draggable="false"
+                            data-protected="true">
                     </div>
                     <div class="card-info">
-                        <h3>Sophie Legrand</h3>
-                        <p>41 ans, Infirmière</p>
-                        <p class="desc">La santé au cœur de nos préoccupations.</p>
+                        <h3>Didier Lekiefs</h3>
+                        <p>61 ans, Retraité de la fonction publique hospitalière</p>
+                        <p class="desc">Rue Lagarde</p>
                     </div>
                 </div>
-                 <div class="candidate-card">
+                <div class="candidate-card">
                     <div class="card-image">
-                        <img src="https://placehold.co/300x400/eeeeee/333333?text=Candidat+4" alt="Candidat 4">
+                        <img src="https://img.flopics.fr/4.jpg" alt="Portrait de Stéphanie TRICARD, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
                     </div>
                     <div class="card-info">
-                        <h3>Pierre Dubois</h3>
-                        <p>29 ans, Urbaniste</p>
-                        <p class="desc">Pour un aménagement durable de la ville.</p>
+                        <h3>Stéphanie TRICARD</h3>
+                        <p>40 ans, Commerçante</p>
+                        <p class="desc">Quartier République</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/5.jpg" alt="Portrait de Thierry GRANET, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Thierry GRANET</h3>
+                        <p>59 ans, Technicien du patrimoine aux Bâtiments de France, ministère de la Culture.</p>
+                        <p class="desc">Quartier du palais des sports</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/625932b1e7cd9699f.jpg"
+                            alt="Portrait de Juliah SEBAH, candidate" loading="lazy" draggable="false"
+                            data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Juliah SEBAH</h3>
+                        <p>70 ans, retraitée de la poste</p>
+                        <p class="desc">quartier Jean -Jaurès</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/7.jpg" alt="Portrait de Laurent THIBAUD, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Laurent THIBAUD</h3>
+                        <p>56 ans, directeur Général entreprises du bâtiment</p>
+                        <p class="desc">Lafont</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/8.jpg" alt="Portrait de Anaïs BRANTHOME, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Anaïs BRANTHOME</h3>
+                        <p>32 ans, chargée de projet </p>
+                        <p class="desc">Jabreilles </p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/9.jpg" alt="Portrait de Clément LADUNE, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Clément LADUNE</h3>
+                        <p>42 ans, enseignant</p>
+                        <p class="desc">Quartier Blanqui</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/1035861e98d8fa751b.jpg"
+                            alt="Portrait de Esther COQUET, candidate" loading="lazy" draggable="false"
+                            data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Esther COQUET</h3>
+                        <p>34 ans, professeur d'histoire de l'art en reconversion agricole</p>
+                        <p class="desc">Place Lacôte</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/11.jpg" alt="Portrait de Lucien COINDEAU, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Lucien COINDEAU</h3>
+                        <p>77 ans, ancien enseignant de philosophie</p>
+                        <p class="desc">Quartier de la gare</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/12.jpg" alt="Portrait de Bernadette DESROCHES, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Bernadette DESROCHES</h3>
+                        <p>73 ans, infirmière retraitée centre hospitalier de Saint-Junien</p>
+                        <p class="desc">Route de Saulgond</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/13.jpg" alt="Portrait de Alex GERBAUD, candidat" loading="lazy"
+                            draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Alex GERBAUD</h3>
+                        <p>28 ans, juriste en droit social </p>
+                        <p class="desc">Quartier Comodoliac</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/14.jpg" alt="Portrait de Mireille CHABAUD, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Mireille CHABAUD</h3>
+                        <p>64 ans, retraitée de la Poste </p>
+                        <p class="desc">Le Châtelard</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/15.jpg" alt="Portrait de Vincent JARRY, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Vincent JARRY</h3>
+                        <p>34 ans, luthier et professeur de philosophie independant</p>
+                        <p class="desc">Place Lacôte</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/16.jpg" alt="Portrait de Michèle BRENAC, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Michèle BRENAC</h3>
+                        <p>80 ans, retraitée DRH dans une société anglo-saxonne</p>
+                        <p class="desc">Rue Gustave Flaubert</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/17.jpg" alt="Portrait de Alan DUVAL, candidat" loading="lazy"
+                            draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Alan DUVAL</h3>
+                        <p>48 ans, enseignant</p>
+                        <p class="desc">Quartier des Charmilles</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/18.jpg" alt="Portrait de Esther RASOA FENOSOA, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Esther RASOA FENOSOA</h3>
+                        <p>53 ans, infirmière</p>
+                        <p class="desc">Mazieras</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/19.jpg" alt="Portrait de Philippe HERBRECHT, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Philippe HERBRECHT</h3>
+                        <p>53 ans, chef d'entreprise</p>
+                        <p class="desc">Quartier Bellevue</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/20.jpg" alt="Portrait de Tess VIALA NOUAILLE, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Tess VIALA-NOUAILLE</h3>
+                        <p>20 ans, étudiante en Droit</p>
+                        <p class="desc">Pré de la Colle</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/21.jpg" alt="Portrait de Christian PEAN, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Christian PÉAN</h3>
+                        <p>62 ans, ancien papetier conducteur de machines, retraité du privé, président de la mutuelle
+                            des coopérateurs depuis 2017</p>
+                        <p class="desc">Les trois bornes, la Fabrique</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/22.jpg" alt="Portrait de Laure MURA, candidate" loading="lazy"
+                            draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Laure MURA</h3>
+                        <p>33 ans, intermittente du spectacle musicienne</p>
+                        <p class="desc">Chez Moulinaud</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/23.jpg" alt="Portrait de Sébastien GAUDY, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sébastien GAUDY</h3>
+                        <p>50 ans, responsable non alimentaire</p>
+                        <p class="desc">Rue Gérard</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/24.jpg" alt="Portrait de Béatrice COMPERE, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Béatrice COMPÈRE</h3>
+                        <p>50 ans, gestionnaire Formation Continue</p>
+                        <p class="desc">Quartier Chantemerle</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/25.jpg" alt="Portrait de Jérémy BOIREAU, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Jérémy BOIREAU</h3>
+                        <p>39 ans, agent de maîtrîse</p>
+                        <p class="desc">l'Homme du Bost</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/26.jpg" alt="Portrait de Catherine FEDER, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Catherine FEDER</h3>
+                        <p>60 ans, personnel de direction dans l’éducation nationale</p>
+                        <p class="desc">Quartier du cimetière</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/27.jpg" alt="Portrait de Simon GAUDRAY, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Simon GAUDRÉ</h3>
+                        <p>40 ans, technicien intervention gaz</p>
+                        <p class="desc">Peuplier, Forgeix</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/28.jpg" alt="Portrait de Lou KORTAA, candidate" loading="lazy"
+                            draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Lou KORTAA</h3>
+                        <p>18 ans, étudiante en Histoire</p>
+                        <p class="desc">Glane</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/29.jpg" alt="Portrait de Gilles GUERIN, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Gilles GUERIN</h3>
+                        <p>61 ans, agent d’accueil à la POL, référant gens du voyage</p>
+                        <p class="desc">La Bretagne</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/30.jpg" alt="Portrait de Sarah MEMBRIVE, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Sarah MEMBRIVE</h3>
+                        <p>45 ans, professeur de français </p>
+                        <p class="desc">Centre ville</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/31.jpg" alt="Portrait de Bernard BEAUBREUIL, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Bernard BEAUBREUIL</h3>
+                        <p>73 ans, retraité industrie papetière </p>
+                        <p class="desc">Centre ville</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/32.jpg" alt="Portrait de Christelle SIMONNEAU, candidate"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Christelle SIMONNEAU</h3>
+                        <p>54 ans, enseignante de math-sciences</p>
+                        <p class="desc">Rue des Maumonts</p>
+                    </div>
+                </div>
+                <div class="candidate-card">
+                    <div class="card-image">
+                        <img src="https://img.flopics.fr/33.jpg" alt="Portrait de Patrice JOLLY, candidat"
+                            loading="lazy" draggable="false" data-protected="true">
+                    </div>
+                    <div class="card-info">
+                        <h3>Patrice JOLLY</h3>
+                        <p>67 ans, préparateur en Pharmacie retraité</p>
+                        <p class="desc">Quartier Palais des sports</p>
                     </div>
                 </div>
             </div>
@@ -140,28 +528,78 @@
         <div class="container">
             <h2 class="section-title center">NOTRE <span class="highlight">PROJET</span></h2>
             <div class="accordion">
-                <!-- Item 1 -->
+                <!-- Item 1: Une ville VIVANTE ! -->
                 <div class="accordion-item" data-color="#d64370">
                     <div class="accordion-header">
-                        <span class="icon">🌆</span>
+                        <span class="icon">🏪</span>
                         <h3>UNE VILLE VIVANTE !</h3>
                         <span class="toggle-icon">+</span>
                     </div>
                     <div class="accordion-content">
                         <div class="content-inner">
-                            <p>Nous voulons redynamiser le centre-ville et soutenir nos commerces de proximité par des actions concrètes et innovantes.</p>
+                            <div class="programme-images">
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/vieurbaine.jpeg" alt="Vie urbaine à Saint-Junien"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/lacote.jpeg" alt="Place Lacôte" loading="lazy"
+                                        data-protected="true">
+                                </div>
+                            </div>
+                            <h4>→ Une ville associative</h4>
+                            <h4>→ Une ville de culture et de sport</h4>
+                            <h4>→ Une ville commerçante</h4>
+
+                            <p>Nous avons le plaisir de nous retrouver au marché, lors des manifestations sportives,
+                                culturelles, commerçantes qui ont lieu presque chaque week-end à Saint-Junien, comme
+                                durant tout l'été et les fêtes de fin d'année. Nous continuerons de soutenir
+                                l'engagement et la créativité des Saint-Juniauds et Saint-Juniaudes.</p>
+
+                            <p>Le centenaire de notre cinéma sera l'occasion de bâtir ensemble une politique culturelle
+                                sur des fondations déjà solides.</p>
+
+                            <p>On dit souvent que nos infrastructures sportives sont dignes d'une ville de 30 000
+                                habitants, elles seront renforcées par un nouveau dojo.</p>
+
+                            <p>Une ville vivante est une ville qui prend soin de son patrimoine, nous donnerons donc une
+                                priorité à la
+                                restauration de la toiture de la collégiale.</p>
+
+                            <p>Saint-Junien est aussi vivante parce que c'est une ville commerçante. La commune sera
+                                investie dans le développement des commerces.</p>
+
+                            <p>Pour faire vivre notre ville, nous faciliterons la mobilité pour tous avec le
+                                renforcement de l'offre Liberbus, système de transport à la demande, et nous
+                                maintiendrons la gratuité des stationnements.</p>
+
+                            <p>Nous nous assurerons que tout le monde a sa place dans le centre-ville, quel que soit son
+                                âge et son mode de transport, en améliorant « la zone de rencontre » pour que toutes et
+                                tous, piétons et cyclistes, s'y sentent en sécurité.</p>
+
                             <div class="measures">
-                                <h4>DEMAIN ==></h4>
+                                <h4>POUR DEMAIN</h4>
                                 <ul>
-                                    <li>Création d'une halle gourmande</li>
-                                    <li>Plan de rénovation des façades</li>
-                                    <li>Gratuité du stationnement le samedi</li>
+                                    <li>Restaurer la toiture de la collégiale.</li>
+                                    <li>Maintenir un haut niveau de soutien aux associations et créer une véritable
+                                        maison des associations aux Charmilles.</li>
+                                    <li>Renforcer la mobilité avec le Liberbus.</li>
+                                    <li>Le parc du cloître sera transformé l'été en cinéma de plein air et en scène
+                                        de spectacle vivant.</li>
+                                    <li>Créer un dojo capable d'accueillir les nombreux pratiquants d'arts martiaux.
+                                    </li>
+                                    <li>Faire de notre ancien restaurant scolaire un grand support d'œuvres d'art.</li>
+                                    <li>Maintenir la gratuité des stationnements.</li>
+                                    <li>Renforcer la zone de rencontre du centre-ville où la vitesse est limitée à
+                                        20km/h et où les
+                                        piétons et les cyclistes sont prioritaires.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Item 2 -->
+
+                <!-- Item 2: Une ville pour LA JEUNESSE ! -->
                 <div class="accordion-item" data-color="#e85d8a">
                     <div class="accordion-header">
                         <span class="icon">🎓</span>
@@ -170,19 +608,66 @@
                     </div>
                     <div class="accordion-content">
                         <div class="content-inner">
-                            <p>La jeunesse est l'avenir de Saint-Junien. Nous investirons dans les écoles et les lieux de vie pour nos enfants.</p>
+                            <div class="programme-images">
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/enfance.jpeg" alt="Épanouissement de l'enfance"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/ecologie.jpeg" alt="Écologie et jeunesse"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                            </div>
+                            <p>Nous avons façonné au fil des années une ville dans laquelle les enfants sont accueillis
+                                dans nos crèches, apprennent à nager au plus tôt, peuvent découvrir le plaisir de la
+                                musique dans les meilleures conditions, s'ouvrir à la culture ou pratiquer le sport.</p>
+
+                            <p>Le bien-être et l'épanouissement de la jeunesse est un des marqueurs fort de la politique
+                                menée depuis des décennies à Saint-Junien.</p>
+
+                            <p>Un maillage de sept écoles vient assurer une proximité essentielle.</p>
+
+                            <p>Les fournitures des élèves sont gratuites et le resteront.</p>
+
+                            <p>Les agents de la commune soutiennent l'apprentissage avec un agent dans chaque classe de
+                                maternelle, des transports gratuits pour les sorties culturelles et sportives, des
+                                éducateurs musicaux et sportifs présents dans les classes.</p>
+
+                            <p>Les enfants ont une nourriture de qualité préparée par la commune à partir de produits
+                                bio du potager.</p>
+
+                            <p>Nous irons plus loin avec comme objectif la labellisation « ville amie des enfants » de
+                                l’UNICEF.</p>
+
                             <div class="measures">
-                                <h4>DEMAIN ==></h4>
+                                <h4>POUR DEMAIN</h4>
                                 <ul>
-                                    <li>Rénovation thermique des écoles</li>
-                                    <li>Création d'un Conseil Municipal des Jeunes</li>
-                                    <li>Nouveau skatepark couvert</li>
+                                    <li>Bloquer dans un premier temps le tarif des repas à 3 euros puis mettre en place
+                                        une tarification dégressive.</li>
+                                    <li>Un pôle petite enfance permettant d'accueillir les enfants, les parents et les
+                                        assistantes maternelles dans de meilleures conditions.</li>
+                                    <li>Favoriser l'école hors les murs, dans le futur parc des Charmilles, au site
+                                        Corot ou sur l'île de Chaillac par exemple.</li>
+                                    <li>Intégrer davantage la musique dans le cursus scolaire grâce au soutien du
+                                        conservatoire et de l'éducation nationale.</li>
+                                    <li>Développer, avec l'éducation nationale, l'apprentissage des langues.</li>
+                                    <li>Réaliser des travaux dans les écoles pour améliorer encore l'isolation thermique
+                                        et les conditions d'apprentissage.</li>
+                                    <li>Améliorer l'intégration des élèves en situation de handicap dans les écoles (la
+                                        gratuité des repas à la cantine pour les personnes qui accompagnent les élèves
+                                        et
+                                        formation des agents municipaux).</li>
+                                    <li>Développer les installations de jeux pour enfants, intégrer la place des enfants
+                                        dans chaque projet d'aménagement.</li>
+                                    <li>Renforcer la participation des enfants aux décisions avec le conseil municipal
+                                        d'enfants et un conseil municipal de jeunes.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Item 3 -->
+
+                <!-- Item 3: Une ville dans LA NATURE ! -->
                 <div class="accordion-item" data-color="#6fb583">
                     <div class="accordion-header">
                         <span class="icon">🌳</span>
@@ -191,19 +676,68 @@
                     </div>
                     <div class="accordion-content">
                         <div class="content-inner">
-                            <p>Préserver notre cadre de vie et engager la transition écologique à l'échelle locale.</p>
+                            <div class="programme-images">
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/vienne.jpeg" alt="Bords de Vienne" loading="lazy"
+                                        data-protected="true">
+                                </div>
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/potager.jpeg" alt="Potager municipal"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                            </div>
+                            <h4>→ Accès à la Vienne</h4>
+                            <h4>→ Chemins</h4>
+                            <h4>→ Potager</h4>
+                            <h4>→ Ouverture des parcs</h4>
+                            <p class="highlight-text"><strong>Saint-Junien est une ville dans la nature, nous la
+                                    rendrons plus accessible.</strong></p>
+
+                            <p><strong>Nous remettrons les rivières au cœur de notre ville.</strong></p>
+
+                            <p>Le travail réalisé autour de la Cité du cuir, la réhabilitation de friches, la création
+                                d'un chemin jusqu'à l'île de Chaillac d'un côté et jusqu'à Limoges de l'autre, comme
+                                l'aménagement de lieux de baignade, nous permettrons de redonner toute sa place à cette
+                                belle rivière et de mieux faire face au changement climatique.</p>
+
+                            <p>Nous transformerons, avec la communauté de communes, des friches industrielles de bord de
+                                Vienne en lieux de loisir et de promenade.</p>
+
+                            <p>Nous améliorerons l'accès au site de Précoin et à son verger, pont entre la ville et les
+                                sites naturels de la Glane.</p>
+
+                            <p>Le potager municipal bio de l'île de Chaillac a été l'une des grandes réussites de la
+                                dernière mandature. Sa production augmente avec l'objectif d'atteindre 80% de légumes
+                                consommés dans les cantines.</p>
+
+                            <p>Le jardin de l’ancien cloître vient d’ouvrir au public pour la première fois depuis sa
+                                création il y a 900 ans. Le parc des Charmilles ouvrira ses portes permettant aux
+                                collégiens de Paul Langevin, aux habitants de la cité Rochebrune, comme à tous les
+                                Saint-Juniauds et Saint-Juniaudes de bénéficier d'un espace vert en centre-ville.</p>
+
+                            <p>Nous réaménagerons la place Lacôte pour lui permettre d'accueillir encore mieux les
+                                événements qui s'y déroulent avec des installations pour enfants renouvelées et nous en
+                                ferons un véritable parc.</p>
+
                             <div class="measures">
-                                <h4>DEMAIN ==></h4>
+                                <h4>POUR DEMAIN</h4>
                                 <ul>
-                                    <li>Plan "1000 arbres" en 6 ans</li>
-                                    <li>Végétalisation des cours d'école</li>
-                                    <li>Mobilités douces et pistes cyclables</li>
+                                    <li>Chemins le long de la Vienne.</li>
+                                    <li>80% des légumes de la cantine produits par le potager communal bio.</li>
+                                    <li>Ouverture du parc des Charmilles, aménagement de la place Lacôte.</li>
+                                    <li>Lorsque c'est possible, chaque nouvel aménagement de voierie intégrera des
+                                        pistes
+                                        cyclables.</li>
+                                    <li>Récupération de l'eau des toitures de nos serres municipales, de la piscine et
+                                        de la station
+                                        d’épuration pour l'arrosage.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <!-- Item 4 -->
+
+                <!-- Item 4: Une ville qui PROTÈGE ! -->
                 <div class="accordion-item" data-color="#5aaa72">
                     <div class="accordion-header">
                         <span class="icon">🛡️</span>
@@ -212,19 +746,64 @@
                     </div>
                     <div class="accordion-content">
                         <div class="content-inner">
-                            <p>Assurer la tranquillité publique et la sécurité de tous les Saint-Jeunauds.</p>
+                            <div class="programme-images">
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/hopital.jpeg" alt="Hôpital Roland Mazoin"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/jeunesse.jpeg" alt="Action pour la jeunesse"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                            </div>
+                            <h4>→ Santé</h4>
+                            <h4>→ Solidarité</h4>
+                            <h4>→ Éclairage</h4>
+                            <h4>→ Police municipale</h4>
+
+                            <p>Une ville qui protège est avant tout une ville solidaire où personne ne dort dans la rue
+                                et où
+                                les équipements communaux de qualité sont accessibles à des tarifs bas ou
+                                gratuits comme la médiathèque.</p>
+
+                            <p>La protection passe par la santé et le soutien constant à notre hôpital Roland Mazoin et
+                                à l'ensemble de ses services.</p>
+
+                            <p>Une ville qui protège c'est aussi une ville qui améliore le sentiment de sécurité avec,
+                                un
+                                meilleur éclairage public.</p>
+
+                            <p>UUne ville qui protège c'est également une police municipale, véritable service public
+                                accessible dans des locaux dédiés ouverts aux habitants et équipée d'un nouveau
+                                véhicule. Son action, complémentaire de celle de la gendarmerie est tournée vers la
+                                prévention, la gestion des conflits et la sécurité des enfants aux abords de nos écoles,
+                                collèges et lycées.</p>
+
+                            <p>La gendarmerie pourra s'appuyer sur un système de vidéoprotection permettant de filmer
+                                les entrées et sorties de véhicules dans la ville. Nous avons voulu que ce système,
+                                opérationnel dans les mois à venir, soit le plus respectueux des droits, en effet seuls
+                                les gendarmes autorisés par un magistrat pourront y accéder.</p>
+
                             <div class="measures">
-                                <h4>DEMAIN ==></h4>
+                                <h4>NOUS IRONS PLUS LOIN :</h4>
                                 <ul>
-                                    <li>Renforcement de la police municipale</li>
-                                    <li>Vidéoprotection intelligente</li>
-                                    <li>Dispositif "Voisins Vigilants"</li>
+                                    <li>Mise en place d'une mutuelle communale.</li>
+                                    <li>Programme d'accueil de soignants pour améliorer notamment l'accès à un médecin
+                                        traitant.</li>
+                                    <li>Améliorer la vie des familles monoparentales avec des temps de répit et des
+                                        tarifications adaptées en s'appuyant sur nos centres sociaux et nos crèches qui
+                                        accompagnent les parents.</li>
+                                    <li>Permettre avec la communauté de communes une garde d'enfants dans nos lieux
+                                        culturels notamment la Mégisserie et le cinéma.</li>
+                                    <li>Continuer à combattre la solitude par l'ensemble des actions du centre communal
+                                        d'action sociale et du centre social La Parenthèse.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <!-- Item 5 -->
+
+                <!-- Item 5: Une ville de COOPÉRATION -->
                 <div class="accordion-item" data-color="#4a9d5f">
                     <div class="accordion-header">
                         <span class="icon">🤝</span>
@@ -233,15 +812,44 @@
                     </div>
                     <div class="accordion-content">
                         <div class="content-inner">
-                            <p>Une démocratie locale vivante où chaque citoyen a sa place et sa parole.</p>
-                            <div class="measures">
-                                <h4>DEMAIN ==></h4>
-                                <ul>
-                                    <li>Budget participatif annuel</li>
-                                    <li>Permanences d'élus dans les quartiers</li>
-                                    <li>Transparence totale des décisions</li>
-                                </ul>
+                            <div class="programme-images">
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/economie.jpeg" alt="Développement économique"
+                                        loading="lazy" data-protected="true">
+                                </div>
+                                <div class="programme-image-container">
+                                    <img src="assets/photo/programme/ville.jpeg" alt="Vue de la ville" loading="lazy"
+                                        data-protected="true">
+                                </div>
                             </div>
+                            <h4>→ Développement économique</h4>
+                            <h4>→ Ramassage des déchets</h4>
+
+                            <p>Les élections municipales seront aussi celles de la communauté de communes.</p>
+
+                            <p>Nous avons la chance d'avoir une intercommunalité de bonne taille où les 13 communes
+                                coopèrent pour l'intérêt de toutes et tous.</p>
+
+                            <p>Elle traite de sujets importants pour notre quotidien comme le ramassage des déchets,
+                                l'eau potable et le développement économique.</p>
+
+                            <p>Saint-Junien portera sur ces différents points une vision.</p>
+
+                            <p>Nous plaiderons pour le renforcement du service des déchets avec le principe d'un
+                                ramassage en porte à porte de déchets recyclables et non recyclables et pour la
+                                disparition des bacs d'apport volontaires tels qu'ils sont.</p>
+
+                            <p>En associant tous les habitants à la mise en place de ce projet, nous construirons
+                                ensemble ce service public selon les nécessités des villages et de la ville.</p>
+
+                            <p>Nous renforcerons le service de ramassage des encombrants.</p>
+
+                            <p>Nous créerons avec la communauté de communes un tiers lieu dans l'ancienne ganterie de la
+                                rue Louis-Codet, lieu emblématique de l'histoire de la coopération à Saint-Junien.</p>
+
+                            <p>La tarification du centre aqua-récréatif sera simplifiée en maintenant la gratuité pour
+                                les enfants de moins de 4 ans et en mettant en place un tarif unique de 2 euros pour les
+                                moins de 18 ans.</p>
                         </div>
                     </div>
                 </div>
@@ -249,37 +857,65 @@
         </div>
     </section>
 
+
     <!-- Section 4: Agenda -->
     <section id="agenda" class="section bg-light">
         <div class="container">
-            <h2 class="section-title center">AGENDA <span class="highlight">CAMPAGNE</span></h2>
+            <h2 class="section-title center">AGENDA DE <span class="highlight">CAMPAGNE</span></h2>
+            <div class="agenda-intro">
+                <h3 class="agenda-subtitle">DATES A RETENIR : </h3>
+            </div>
             <div class="timeline">
                 <div class="timeline-line"></div>
-                
+
                 <div class="event-card left">
-                    <div class="event-date">15 FÉV</div>
+                    <div class="event-date">26 FÉV</div>
                     <div class="event-content">
-                        <h3>Lancement de Campagne</h3>
-                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Salle des Fêtes &bull; <i class="fas fa-clock"></i> 19h00</p>
-                        <p>Venez découvrir notre équipe et nos grandes orientations pour Saint-Junien.</p>
+                        <h3>Réunion Publique</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Salle des fêtes du Mas &bull; <i
+                                class="fas fa-clock"></i> 18h30</p>
+                        <p>Rencontre avec les candidats pour échanger sur les enjeux du territoire.</p>
                     </div>
                 </div>
 
                 <div class="event-card right">
-                    <div class="event-date">22 FÉV</div>
+                    <div class="event-date">1ER MARS</div>
                     <div class="event-content">
-                        <h3>Réunion Publique - Quartier Gare</h3>
-                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> École J. Prévert &bull; <i class="fas fa-clock"></i> 18h30</p>
-                        <p>Échanges autour des problématiques de mobilité et d'aménagement.</p>
+                        <h3>Réunion Publique</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Salle des fêtes de la Bretagne
+                            &bull; <i class="fas fa-clock"></i> 9h30</p>
+                        <p>Rencontre avec les candidats pour discuter de vos préoccupations et de nos propositions.</p>
                     </div>
                 </div>
 
                 <div class="event-card left">
-                    <div class="event-date">05 MARS</div>
+                    <div class="event-date">8 MARS</div>
                     <div class="event-content">
-                        <h3>Grand Meeting</h3>
-                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Gymnase P. Coubertin &bull; <i class="fas fa-clock"></i> 20h00</p>
-                        <p>Présentation du programme complet avant le premier tour.</p>
+                        <h3>Réunion Publique</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Salle des fêtes de la Glane &bull;
+                            <i class="fas fa-clock"></i> 9h30
+                        </p>
+                        <p>Rencontre avec les candidats pour présenter notre vision de Saint-Junien.</p>
+                    </div>
+                </div>
+
+                <div class="event-card right">
+                    <div class="event-date">13 MARS</div>
+                    <div class="event-content">
+                        <h3>Réunion Publique</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Salle des fêtes &bull; <i
+                                class="fas fa-clock"></i> 18h30</p>
+                        <p>Grande réunion publique avant le premier tour.</p>
+                    </div>
+                </div>
+
+                <div class="event-card left highlight-event">
+                    <div class="event-date">15 MARS</div>
+                    <div class="event-content">
+                        <h3>Premier Tour des Élections Municipales</h3>
+                        <p class="event-meta"><i class="fas fa-vote-yea"></i> Bureaux de vote de Saint-Junien &bull; <i
+                                class="fas fa-clock"></i> 8h00 - 18h00</p>
+                        <p><strong>Faites entendre votre voix ! Rendez-vous dans votre bureau de vote.</strong></p>
                     </div>
                 </div>
             </div>
@@ -291,23 +927,36 @@
         <div class="container">
             <div class="contact-box">
                 <h2 class="section-title center white">REJOIGNEZ <span class="highlight-white">NOUS</span></h2>
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mdalkbkd" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Votre Nom" required>
+                        <input type="text" name="name" placeholder="Votre Nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Votre Email" required>
+                        <input type="email" name="email" placeholder="Votre Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Votre Message" rows="4" required></textarea>
+                        <textarea name="message" placeholder="Votre Message" rows="4" required></textarea>
                     </div>
+                    <!-- Champ caché pour identifier la provenance -->
+                    <input type="hidden" name="_subject"
+                        value="Nouveau message depuis le site Ensemble pour Saint-Junien">
+                    <!-- Redirection après envoi (optionnel) -->
+                    <input type="hidden" name="_next" value="https://letoalan.codeberg.page/ESJ2026/">
+                    <!-- Anti-spam honeypot (optionnel) -->
+                    <input type="text" name="_gotcha" style="display:none">
+
                     <button type="submit" class="btn btn-submit">ENVOYER</button>
                 </form>
+
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:contact@ensemble-st-junien.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/people/Ensemble-pour-Saint-Junien/61587295705339/"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ensemble.pour.saintjunien/" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="mailto:ESJ2026@proton.me?subject=Contact%20depuis%20le%20site" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -315,14 +964,20 @@
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 Ensemble pour Saint-Junien - Hervé Beaudet</p>
+            <p>&copy; 2026 Ensemble pour Saint-Junien - Pour Hervé Beaudet et la liste Ensemble pour Saint-Junien - Par
+                Alan Duval</p>
             <div class="footer-links">
-                <a href="#">Mentions Légales</a>
-                <a href="#">Politique de Confidentialité</a>
+                <a href="mentions-legales.html">Mentions Légales</a>
+                <a href="politique-confidentialite.html">Politique de Confidentialité</a>
+                <a href="politique-confidentialite.html#droits">Vos droits RGPD</a>
+                <a href="politique-confidentialite.html#contact">Nous contacter</a>
             </div>
         </div>
     </footer>
 
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
