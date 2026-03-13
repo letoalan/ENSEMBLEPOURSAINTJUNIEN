@@ -795,7 +795,8 @@ section {
 }
 
 .grid-item.full-width-video .video-responsive {
-    max-width: 800px; /* Optional: limit width on big screens */
+    max-width: 100%; /* Occupe toute la largeur disponible */
+    margin: 0 auto; /* Centrage */
 }
 
 .video-responsive {
