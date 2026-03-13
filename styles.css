@@ -86,6 +86,14 @@ section {
     transform: skew(-5deg);
 }
 
+.highlight-green {
+    color: var(--white);
+    background-color: var(--primary-green);
+    padding: 0 0.5rem;
+    display: inline-block;
+    transform: skew(-5deg);
+}
+
 .highlight-white {
     color: var(--primary-pink);
     background-color: var(--white);
@@ -728,7 +736,7 @@ section {
 .grid-layout-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -764,10 +772,52 @@ section {
 }
 
 .grid-item .photo-wrapper,
-.grid-item .instagram-wrapper {
+.grid-item .instagram-wrapper,
+.grid-item .video-responsive {
     width: 100%;
     max-width: 450px;
 }
+
+.grid-item.full-width-video {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    padding: 3rem 2rem;
+}
+
+.video-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.grid-item.full-width-video .video-responsive {
+    max-width: 800px; /* Optional: limit width on big screens */
+}
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.video-responsive iframe,
+.video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 
 
 
